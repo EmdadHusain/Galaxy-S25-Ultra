@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- swiper.min.css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- tailwindcss -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="assets/css/output.css" />
+
+    <!-- style.css -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+     
+    <!-- swiper-bundle.min.js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </head>
+
+  <style>
+    /*======================
+Common Css Starts 
+========================*/
+* {
+  /* margin: 0;
+  padding: 0; */
+  border: 0;
+  outline: 0;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* line-height: 1.5em; */
+}
+.containerC {
+  margin: 0 auto;
+  max-width: 1335px;
+  width: 96%;
+}
+
+body {
+  /* color: #1f1f1f; */
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  /* line-height: 1.5em; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.containerC {
+  margin: 0 auto;
+  max-width: 1335px;
+  width: 96%;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #a4a4a4;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus,
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* font-weight: 700; */
+  margin-bottom: 0;
+  /* font-size: unset; */
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  /* padding: 10px 20px; */
+  /* background: #fafafa; */
+  resize: none;
+}
+
+/*=======================
+  Common Css Ends 
+  =========================*/
+
+/* .hero_area */
+.hero_area {
+  background-image: url("assets/img/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* top_features  */
+
+.feature_container {
+  width: 94%;
+  margin: 0 auto;
+  max-width: 988px;
+}
+.feature_swiper .swiper-scrollbar-drag {
+  background: #f7f7f7;
+}
+.feature_swiper .swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: #1d1d1d;
+}
+.feature_swiper {
+  padding: 70px 0 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .feature_swiper {
+    padding: 30px 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feature_swiper {
+    padding: 40px 0 52px;
+  }
+}
+
+  </style>
+  <body>
+    <!-- <div class="mt-[500px]"></div> -->
+    <!-- hero_area -->
+    <div
+      class="hero_area overflow-hidden pb-[80px] pt-[350px] text-white md:pb-[80px] md:pt-[110px] lg:pb-[100px] lg:pt-[370px] xl:pb-[70px]"
+    >
+      <div class="containerC">
+        <div
+          class="left-hero mx-auto min-h-[174px] max-w-[465px] text-center md:mx-0"
+        >
+          <h1
+            class="max text-[25px] font-bold text-white md:text-[34px] lg:text-[49px]"
+          >
+            Galaxy S25 Ultra
+          </h1>
+
+          <div class="hero_img flex justify-center">
+            <img
+              class="w-32 lg:w-[236px]"
+              src="assets/img/galaxyLogo.png"
+              alt=""
+            />
+          </div>
+
+          <p class="mt-[20px] font-light leading-[22px]">
+            Save up to $1,200+. Get up to $900 instant trade-in credit and up to
+            $300 Samsung Credit. Use this exclusive credit on upgraded storage
+            or bundle offers.
+          </p>
+
+          <button
+            class="mt-4 inline-flex rounded-[20px] bg-[#2c69e2] px-[23px] py-2 text-sm font-bold"
+          >
+            Buy now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- top_features -->
+    <div
+      class="top_features bg-black py-[50px] text-white md:py-[70px] lg:py-[100px]"
+    >
+      <div class="feature_container">
+        <h2 class="text- text-3xl font-bold md:text-[40px] lg:mb-16">
+          Top features
+        </h2>
+        <!-- Swiper -->
+        <div class="swiper swiper-container feature_swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Camera -->
+            <div class="swiper-slide">
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/camera.svg" alt="" />
+
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Camera
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Our most advanced AI<br />ProVisual Engine<sup>4</sup>
+                </h2>
+
+                <p>
+                  12MP Front Camera<br />
+                  200MP Wide-Angle Camera
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2: Processor -->
+            <div class="swiper-slide">
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/processor.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Processor
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  The most powerful<br />processor for Galaxy
+                </h2>
+                <p>
+                  Snapdragon® 8 Elite for<br />
+                  Galaxy <sup>22, 23, 24</sup>
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3: Battery -->
+            <div class="swiper-slide">
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/battery.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Battery
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Long-lasting battery life to<br />keep you going all day
+                </h2>
+                <p>5000mAh<br />Up to 31 hrs of video playback <sup>5</sup></p>
+              </div>
+            </div>
+
+            <!-- Slide 4: Durability -->
+            <div class="swiper-slide">
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/durability.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Durability
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Looks sleek, built tough,<br />water resistant
+                </h2>
+                <p>Titanium frame<br />IP68 water resistant</p>
+              </div>
+            </div>
+
+            <!-- Slide 5: Storage -->
+            <div class="swiper-slide">
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/storage.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Storage
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Plenty of space to store it<br />
+                  all and more
+                </h2>
+                <p>
+                  1TB | 512GB | 256GB storage <sup>25</sup><br />12GB memory
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar mt-20"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="mb-[500px]">,</div> -->
+  </body>
+</html>
