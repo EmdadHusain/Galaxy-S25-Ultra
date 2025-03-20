@@ -11,13 +11,14 @@
     />
     <!-- swiper.min.css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- tailwindcss -->
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="assets/css/output.css" />
 
-    <!-- style.css -->
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-     
     <!-- swiper-bundle.min.js -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- jQuery -->
@@ -25,138 +26,13 @@
     <script src="assets/js/main.js"></script>
   </head>
 
-  <style>
-    /*======================
-Common Css Starts 
-========================*/
-* {
-  /* margin: 0;
-  padding: 0; */
-  border: 0;
-  outline: 0;
-  resize: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  /* line-height: 1.5em; */
-}
-.containerC {
-  margin: 0 auto;
-  max-width: 1335px;
-  width: 96%;
-}
+  <style></style>
 
-body {
-  /* color: #1f1f1f; */
-  font-family: "Roboto", sans-serif;
-
-  font-size: 16px;
-  /* line-height: 1.5em; */
-}
-html {
-  scroll-behavior: smooth;
-}
-.containerC {
-  margin: 0 auto;
-  max-width: 1335px;
-  width: 96%;
-}
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-  color: #a4a4a4;
-  display: inline-block;
-}
-a:hover {
-  text-decoration: none;
-}
-a:focus,
-input:focus,
-button:focus,
-textarea:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: "Source Sans Pro", sans-serif; */
-  /* font-weight: 700; */
-  margin-bottom: 0;
-  /* font-size: unset; */
-}
-ul {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-li {
-  display: inline-block;
-  list-style: none;
-}
-
-input,
-button,
-textarea {
-  /* padding: 10px 20px; */
-  /* background: #fafafa; */
-  resize: none;
-}
-
-/*=======================
-  Common Css Ends 
-  =========================*/
-
-/* .hero_area */
-.hero_area {
-  background-image: url("assets/img/hero_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* top_features  */
-
-.feature_container {
-  width: 94%;
-  margin: 0 auto;
-  max-width: 988px;
-}
-.feature_swiper .swiper-scrollbar-drag {
-  background: #f7f7f7;
-}
-.feature_swiper .swiper-horizontal > .swiper-scrollbar,
-.swiper-scrollbar.swiper-scrollbar-horizontal {
-  background: #1d1d1d;
-}
-.feature_swiper {
-  padding: 70px 0 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .feature_swiper {
-    padding: 30px 0 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .feature_swiper {
-    padding: 40px 0 52px;
-  }
-}
-
-  </style>
   <body>
     <!-- <div class="mt-[500px]"></div> -->
     <!-- hero_area -->
     <div
-      class="hero_area overflow-hidden pb-[80px] pt-[350px] text-white md:pb-[80px] md:pt-[110px] lg:pb-[100px] lg:pt-[370px] xl:pb-[70px]"
+      class="hero_area overflow-hidden pt-[350px] pb-[80px] text-white md:pt-[110px] md:pb-[80px] lg:pt-[370px] lg:pb-[100px] xl:pb-[70px]"
     >
       <div class="containerC">
         <div
@@ -176,7 +52,7 @@ textarea {
             />
           </div>
 
-          <p class="mt-[20px] font-light leading-[22px]">
+          <p class="mt-[20px] leading-[22px] font-light">
             Save up to $1,200+. Get up to $900 instant trade-in credit and up to
             $300 Samsung Credit. Use this exclusive credit on upgraded storage
             or bundle offers.
@@ -195,7 +71,7 @@ textarea {
     <div
       class="top_features bg-black py-[50px] text-white md:py-[70px] lg:py-[100px]"
     >
-      <div class="feature_container">
+      <div class="container988">
         <h2 class="text- text-3xl font-bold md:text-[40px] lg:mb-16">
           Top features
         </h2>
@@ -299,8 +175,154 @@ textarea {
       </div>
     </div>
 
+    <!-- energy_score_section -->
+    <div
+      class="energy_score_section bg-black py-10 text-white md:py-[80px] lg:py-[100px]"
+    >
+      <div
+        class="container988 flex flex-col items-center justify-between gap-12 lg:flex-row"
+      >
+        <!-- Left content -->
+        <div class="energy_score_content max-w-[482px]">
+          <h3
+            class="mb-2 text-sm font-medium tracking-[.11em] uppercase md:text-[18px]"
+          >
+            ENERGY SCORE
+          </h3>
 
+          <h2
+            class="mb-2 text-2xl font-bold md:mb-5 md:text-4xl lg:mb-[33px] lg:text-5xl lg:leading-[56px]"
+          >
+            Your own personal health coach
+          </h2>
 
-    <!-- <div class="mb-[500px]">,</div> -->
+          <p class="text-lg leading-[27.9px]">
+            Sync with Galaxy Watch or Ring and receive insights including
+            analysis of your sleep, activity and heart rate.<sup>14,15</sup>
+            Plus, easily keep track of both Energy Score and Now Brief in the
+            new Now Bar.
+          </p>
+
+          <div
+            class="samsung_health_link mt-2 flex items-center gap-3 text-white md:mt-5 lg:mt-[42px]"
+          >
+            <img
+              class="w-[50px] md:w-auto"
+              src="assets/img/left-energy-img.jpg"
+              alt="Samsung Health"
+            />
+
+            <div class="learn_more_link">
+              <a
+                href="#"
+                class="text-xl leading-6 font-semibold text-white hover:text-[#2c69e2]"
+              >
+                Samsung Health
+                <span class="block text-lg underline underline-offset-4"
+                  >Learn more
+
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Right image -->
+        <div class="energy_score_img">
+          <img src="assets/img/energy_score.jpg" alt="Energy Score" />
+        </div>
+      </div>
+    </div>
+
+    <!-- #looks_Sleek section -->
+    <div class="looks_sleek_section bg-black py-10 text-white md:py-[80px] lg:py-[100px]">
+      <div class="container988 ">
+        <!-- Header -->
+        <h2 class="mx-auto mb-2 text-center text-5xl font-bold md:mb-5 md:text-4xl lg:mb-10 lg:text-5xl lg:leading-[56px]">
+          Looks sleek.<br>Built tough.
+        </h2>
+        <div class="looks_contetn_wrapper flex flex-col items-center gap-12 rounded-[20px] border border-[#555] md:flex-row">
+              <!-- #LeftLooks -->
+          <div class="looks_sleek_img hidden md:block md:w-1/2">
+            <img src="assets/img/looks_sleek.jpg" alt="Looks Sleek">
+          </div>
+          <!-- #Right_looks  -->
+          <div class="looks_sleek_content px-9 md:pr-9 md:w-1/2">
+            <div class="accordion">
+              <div class="accordion-item  border-b border-[#aaaaaa]">
+                <h3 class="accordion-header">
+                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer active" type="button">
+                    Ultra-strong titanium
+                  </button>
+                </h3>
+                <div class="accordion-body active">
+                  <!-- Mobile image inside accordion -->
+                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_1.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <p>
+                    A titanium frame keeps your Galaxy S25 Ultra strong and
+                    protected so you always have peace of mind.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer" type="button">
+                    Galaxy's toughest glass ever
+                  </button>
+                </h3>
+                <div class="accordion-body">
+                  <!-- Mobile image inside accordion -->
+                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_2.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <p>
+                    The toughest glass ever on a Galaxy device, providing
+                    superior durability and scratch resistance.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer" type="button">
+                    Water and dust resistance
+                  </button>
+                </h3>
+                <div class="accordion-body">
+                  <!-- Mobile image inside accordion -->
+                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_3.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <p>
+                    Built to withstand the elements with IP68 water and dust
+                    resistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        // Initialize first accordion item as active
+        $(".accordion-button:first").addClass("active");
+        $(".accordion-body:first").addClass("active");
+
+        // Click handler for accordion items
+        $(".accordion-button").on("click", function () {
+          // Toggle current accordion button
+          $(this).toggleClass("active");
+
+          // Toggle accordion body
+          const accordionBody = $(this)
+            .closest(".accordion-header")
+            .next(".accordion-body");
+          accordionBody.toggleClass("active");
+
+          // Close other accordion items
+          $(".accordion-button").not(this).removeClass("active");
+          $(".accordion-body").not(accordionBody).removeClass("active");
+        });
+      });
+    </script>
+
+    <div class="mb-[500px]">,</div>
   </body>
 </html>

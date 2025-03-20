@@ -9,6 +9,6 @@
   },
   "scripts":{
     "build": "tailwindcss -i ./src/input.css -o ./assets/css/output.css",
-    "watch:tail": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+    "watch:tail": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch"
   }
 }
