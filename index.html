@@ -15,8 +15,8 @@
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- tailwindcss -->
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <!-- #tailwindcss -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/output.css" />
 
     <!-- swiper-bundle.min.js -->
@@ -235,44 +235,64 @@
     </div>
 
     <!-- #looks_Sleek section -->
-    <div class="looks_sleek_section bg-black py-10 text-white md:py-[80px] lg:py-[100px]">
-      <div class="container988 ">
+    <div
+      class="looks_sleek_section bg-black py-10 text-white md:py-[80px] lg:py-[100px]"
+    >
+      <div class="container988">
         <!-- Header -->
-        <h2 class="mx-auto mb-2 text-center text-5xl font-bold md:mb-5 md:text-4xl lg:mb-10 lg:text-5xl lg:leading-[56px]">
-          Looks sleek.<br>Built tough.
+        <h2
+          class="mx-auto text-2xl font-bold sm:text-3xl md:text-center md:text-4xl lg:mb-10 lg:text-5xl lg:leading-[56px]"
+        >
+          Looks sleek.<br />Built tough.
         </h2>
-        <div class="looks_contetn_wrapper flex flex-col items-center gap-12 rounded-[20px] border border-[#555] md:flex-row">
-              <!-- #LeftLooks -->
+        <div
+          class="looks_contetn_wrapper flex flex-col items-center gap-12 overflow-hidden rounded-[20px] border border-[#555] md:flex-row"
+        >
+          <!-- #LeftLooks -->
           <div class="looks_sleek_img hidden md:block md:w-1/2">
-            <img src="assets/img/looks_sleek.jpg" alt="Looks Sleek">
+            <img src="assets/img/looks_sleek.jpg" alt="Looks Sleek" />
           </div>
           <!-- #Right_looks  -->
-          <div class="looks_sleek_content px-9 md:pr-9 md:w-1/2">
+          <div class="looks_sleek_content w-full px-3 sm:px-4 md:w-1/2 md:pr-9">
             <div class="accordion">
-              <div class="accordion-item  border-b border-[#aaaaaa]">
+              <div class="accordion-item border-b border-[#aaaaaa]">
                 <h3 class="accordion-header">
-                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer active" type="button">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-2xl"
+                    type="button"
+                  >
                     Ultra-strong titanium
                   </button>
                 </h3>
-                <div class="accordion-body active">
+                <div class="accordion-body">
                   <!-- Mobile image inside accordion -->
-                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_1.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <img
+                    class="md:hidden"
+                    src="assets/img/looks_mobile_accordian_1.jpg"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
                   <p>
                     A titanium frame keeps your Galaxy S25 Ultra strong and
                     protected so you always have peace of mind.
                   </p>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item border-b border-[#aaaaaa]">
                 <h3 class="accordion-header">
-                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer" type="button">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-2xl"
+                    type="button"
+                  >
                     Galaxy's toughest glass ever
                   </button>
                 </h3>
                 <div class="accordion-body">
                   <!-- Mobile image inside accordion -->
-                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_2.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <img
+                    class="md:hidden"
+                    src="assets/img/looks_mobile_accordian_2.jpg"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
                   <p>
                     The toughest glass ever on a Galaxy device, providing
                     superior durability and scratch resistance.
@@ -281,13 +301,20 @@
               </div>
               <div class="accordion-item">
                 <h3 class="accordion-header">
-                  <button class="accordion-button w-full py-[20px] flex justify-between items-center lg:text-2xl md:font-bold text-white cursor-pointer" type="button">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-2xl"
+                    type="button"
+                  >
                     Water and dust resistance
                   </button>
                 </h3>
                 <div class="accordion-body">
                   <!-- Mobile image inside accordion -->
-                  <img class="md:hidden" src="assets/img/looks_mobile_accordian_3.jpg" alt="Galaxy S25 Ultra titanium frame">
+                  <img
+                    class="md:hidden"
+                    src="assets/img/looks_mobile_accordian_3.jpg"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
                   <p>
                     Built to withstand the elements with IP68 water and dust
                     resistance.
@@ -300,25 +327,99 @@
       </div>
     </div>
     <script>
+      // $(document).ready(function () {
+
+      //   // Initialize first accordion item as active
+      //   $(".accordion-button:first").addClass("active");
+      //   $(".accordion-body:first").addClass("active");
+
+      //   // Click handler for accordion items
+      //   $(".accordion-button").on("click", function () {
+      //     const accordionBody = $(this)
+      //       .closest(".accordion-header")
+      //       .next(".accordion-body");
+      //     // Close other accordion items
+      //    $(".accordion-button").not(this).removeClass("active");
+      //     $(".accordion-body").not(accordionBody).removeClass("active");
+      //     // Toggle current accordion button
+      //     $(this).addClass("active");
+
+      //     // Toggle accordion body
+
+      //     accordionBody.addClass("active");
+
+      //   });
+      // });
+
+      // $(document).ready(function () {
+      //   // Initialize first accordion item as active in all  screens
+      //   $(".accordion-button:first").addClass("active");
+      //   $(".accordion-body:first").addClass("active");
+
+      //   $(".accordion-button").on("click", function () {
+      //     let screenSize = $(window).width();
+      //     const accordionBody = $(this)
+      //       .closest(".accordion-header")
+      //       .next(".accordion-body");
+
+      //     // Handle other accordion items first
+      //     // $(".accordion-body").not(accordionBody).css("transition", "none"); // Remove transition for others
+      //     $(".accordion-button").not(this).removeClass("active");
+      //     $(".accordion-body").not(accordionBody).removeClass("active");
+
+      //     // Force reflow to apply the transition removal
+      //     // $(".accordion-body").not(accordionBody)[0]?.offsetHeight;
+
+      //     // Restore transition for clicked item
+      //     accordionBody.css(
+      //       "transition",
+      //       "max-height 0.5s ease-in-out, padding 0.5s ease-in-out",
+      //     );
+
+      //     if (screenSize <= 768) {
+      //       $(this).toggleClass("active");
+      //       accordionBody.toggleClass("active");
+      //     } else {
+      //       $(this).addClass("active");
+      //       accordionBody.addClass("active");
+      //     }
+      //   });
+      // });
+
       $(document).ready(function () {
-        // Initialize first accordion item as active
+        
+        // Initialize first accordion item as active in all screens
         $(".accordion-button:first").addClass("active");
-        $(".accordion-body:first").addClass("active");
+        $(".accordion-body:first").slideDown();
 
-        // Click handler for accordion items
         $(".accordion-button").on("click", function () {
-          // Toggle current accordion button
-          $(this).toggleClass("active");
-
-          // Toggle accordion body
+          let screenSize = $(window).width();
           const accordionBody = $(this)
             .closest(".accordion-header")
             .next(".accordion-body");
-          accordionBody.toggleClass("active");
 
           // Close other accordion items
           $(".accordion-button").not(this).removeClass("active");
-          $(".accordion-body").not(accordionBody).removeClass("active");
+          $(".accordion-body").not(accordionBody).stop().slideUp();
+
+          if (screenSize < 768) {
+            $(this).toggleClass("active");
+            accordionBody.stop().slideToggle();
+          } else {
+            $(this).addClass("active");
+            accordionBody.stop().slideDown();
+          }
+
+          //$(".accordion-body").not(accordionBody).removeClass("active");
+
+          // Set slower transition for the clicked accordion body (0.5s)
+          // accordionBody.css(
+          //   "transition",
+          //   "max-height 0.5s ease-in-out, padding 0.5s ease-in-out"
+          // );
+
+          // $(this).toggleClass("active");
+          // accordionBody.toggleClass("active");
         });
       });
     </script>
