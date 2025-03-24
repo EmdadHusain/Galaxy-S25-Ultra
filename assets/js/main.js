@@ -19,7 +19,7 @@ $(document).ready(function () {
         spaceBetween: 10,
       },
       // when window width is < 768px
-      560: {
+      630: {
         slidesPerView: 2,
         spaceBetween: 15,
       },
