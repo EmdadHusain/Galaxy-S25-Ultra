@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @theme {
-  --breakpoint-sm: 425px;
+  --breakpoint-xsm: 425px;
+  --breakpoint-sm: 576px;
 }
+
+
 /*======================
 Common Css Starts 
 ========================*/
