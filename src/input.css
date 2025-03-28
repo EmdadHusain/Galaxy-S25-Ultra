@@ -1,13 +1,17 @@
 @import "tailwindcss";
 @theme {
   --breakpoint-xsm: 425px;
-  --breakpoint-sm: 576px;
+  --breakpoint-bsm: 576px;
+  --breakpoint-730: 730px;
 }
 
 
 /*======================
 Common Css Starts 
 ========================*/
+
+
+
 * {
   /* margin: 0;
 padding: 0; */
@@ -145,7 +149,10 @@ Common Css Ends
   font-size: 16px;
 }
 
+
+
 /* Responsive */
+
 @media (min-width: 768px) {
   .mobile-image {
     display: none;
