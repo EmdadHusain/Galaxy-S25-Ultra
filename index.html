@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- #tailwindcss -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="assets/css/output.css" />
 
     <!-- swiper-bundle.min.js -->
@@ -33,7 +33,7 @@
 
     <!-- hero_area -->
     <section
-      class="hero_area overflow-hidden pt-[350px] pb-[80px] text-white md:pt-[110px] md:pb-[80px] lg:pt-[370px] lg:pb-[100px] xl:pb-[70px]"
+      class="hero_area overflow-hidden pt-[350px] pb-[80px] text-white md:pt-[110px] md:pb-[80px] lg:min-h-[100vh] lg:pt-[370px] lg:pb-[100px] xl:pb-[70px]"
     >
       <div class="containerC">
         <div
@@ -70,10 +70,10 @@
 
     <!-- top_features -->
     <section
-      class="top_features xsm:py-[50px] bg-black py-6 text-white   md:py-[70px] lg:py-[100px]"
+      class="top_features xsm:py-[50px] bg-black py-6 text-white md:py-[70px] lg:py-[100px]"
     >
       <div class="container988">
-        <h2 class="text- text-3xl font-bold md:text-[40px] lg:mb-16 ">
+        <h2 class="text- text-3xl font-bold md:text-[40px] lg:mb-16">
           Top features
         </h2>
         <!-- Swiper -->
@@ -306,9 +306,10 @@
                     type="button"
                   >
                     Ultra-strong titanium
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
-                <div class="accordion-body" style="display: none">
+                <div class="accordion-body">
                   <!-- Mobile image inside accordion -->
                   <img
                     class="md:hidden"
@@ -328,6 +329,7 @@
                     type="button"
                   >
                     Galaxy's toughest glass ever
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
                 <div class="accordion-body">
@@ -350,6 +352,7 @@
                     type="button"
                   >
                     Water and dust resistance
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
                 <div class="accordion-body">
@@ -427,9 +430,10 @@
                     type="button"
                   >
                     On-device protection
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
-                <div class="accordion-body" style="display: none">
+                <div class="accordion-body">
                   <p class="mb-6 text-base leading-relaxed">
                     The Personal Data Engine combines and processes your primary
                     data and provides tailored suggestions. It encrypts this
@@ -483,9 +487,10 @@
                     type="button"
                   >
                     Control your data
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
-                <div class="accordion-body" style="display: none">
+                <div class="accordion-body">
                   <p class="mb-6 text-base leading-relaxed">
                     Take full control of how your data is used with advanced
                     privacy settings. Choose what is shared and what stays on
@@ -538,9 +543,10 @@
                     type="button"
                   >
                     Connected security
+                    <i class="fa-solid fa-chevron-down"></i>
                   </button>
                 </h3>
-                <div class="accordion-body" style="display: none">
+                <div class="accordion-body">
                   <p class="mb-6 text-base leading-relaxed">
                     Samsung Knox provides defense-grade security from the chip
                     up, protecting your device against intrusions, malware, and
@@ -599,21 +605,22 @@
 
     <!-- #Switch to Galaxy Section -->
     <section
-      class="switchTo_sec sm:py-10 bg-black py-5 text-white md:py-[80px] lg:py-[100px]"
+      class="switchTo_sec bg-black py-5 text-white sm:py-10 md:py-[50px]"
     >
       <div class="container988">
         <h2
-          class="mb-6 xsm:mb-10    text-center text-3xl font-bold md:mb-14 md:text-4xl lg:mb-16 lg:text-5xl"
+          class="xsm:mb-10 mb-6 text-center text-3xl font-bold md:mb-14 md:text-4xl lg:mb-12 lg:text-5xl"
         >
           Switch to Galaxy
         </h2>
         <div class="switch_carousel">
           <div
-            class="sw_wrapper grid grid-cols-1 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-8"
+            class="sw_wrapper grid grid-cols-1 sm:grid sm:grid-cols-2 sm:gap-5 md:gap-6 lg:gap-8"
           >
             <!-- #Card_1: Switch effortlessly from iOS -->
             <div
               class="switch_card xsm:p-6 flex flex-col justify-between gap-4 overflow-hidden rounded-[20px] border border-[#555] bg-black p-4"
+              style="height: 309.638px"
             >
               <div class="upper_switch_card">
                 <h3 class="xsm:text-2xl mb-3 text-lg font-bold text-white">
@@ -644,24 +651,24 @@
             <!-- #Card_2 : Test Galaxy on your device -->
             <div
               class="switch_card xsm:p-6 flex flex-col justify-between gap-4 overflow-hidden rounded-[20px] border border-[#555] bg-black p-4"
+              style="height: 309.638px"
             >
               <div class="upper_switch_card">
-                <h3
-                  class="xsm:text-2xl mb-3 text-lg font-bold text-white "
-                >
+                <h3 class="xsm:text-2xl mb-3 text-lg font-bold text-white">
                   Test Galaxy on your device
                 </h3>
                 <p class="mb-2 text-sm md:text-base">
                   Preview Galaxy's operating system, from Galaxy AI to home
-                  screen customization,</p>
-                  <a
-                    href="#"
-                    class="group flex items-center text-sm hover:text-[#2c69e2] md:text-base"
-                  >
-                    Learn more
-                    <span class="material-symbols-outlined ml-2"></span>
-                  </a>
+                  screen customization,
                 </p>
+                <a
+                  href="#"
+                  class="group flex items-center text-sm hover:text-[#2c69e2] md:text-base"
+                >
+                  Learn more
+                  <span class="material-symbols-outlined ml-2"></span>
+                </a>
+                <p></p>
               </div>
               <div class="bottom_switch_card ml-auto">
                 <img
@@ -674,6 +681,7 @@
             <!-- Card 3: Samsung Care+ -->
             <div
               class="switch_card xsm:p-6 flex flex-col justify-between gap-4 overflow-hidden rounded-[20px] border border-[#555] bg-black p-4"
+              style="height: 309.638px"
             >
               <div class="upper_switch_card">
                 <h3 class="xsm:text-2xl mb-3 text-lg font-bold text-white">
@@ -705,6 +713,7 @@
             <!-- Card 4: Samsung Wallet -->
             <div
               class="switch_card xsm:p-6 flex flex-col justify-between gap-4 overflow-hidden rounded-[20px] border border-[#555] bg-black p-4"
+              style="height: 309.638px"
             >
               <div class="upper_switch_card">
                 <h3 class="xsm:text-2xl mb-3 text-lg font-bold text-white">
@@ -730,36 +739,473 @@
                 />
               </div>
             </div>
-          
           </div>
-            <!-- Add navigation buttons -->
-            <div class="sw_btn swiper-button-next"></div>
-            <div class="sw_btn swiper-button-prev"></div>
-          </div>
-          
+          <!-- Add navigation buttons -->
+          <div class="sw_btn swiper-button-next"></div>
+          <div class="sw_btn swiper-button-prev"></div>
+        </div>
       </div>
     </section>
-     <!-- Debug window size indicator (optional) -->
-     <div
-     style="
-       position: fixed;
-       bottom: 10px;
-       right: 10px;
-       background: rgba(0, 0, 0, 0.7);
-       color: white;
-       padding: 5px 10px;
-       border-radius: 5px;
-     "
-   >
-     <span id="screen-size"></span>
-   </div>
+    <!-- #faq_sec section -->
+    <section class="faq_sec bg-black py-10 text-white md:py-16 lg:py-24">
+      <div class="container988">
+        <h2 class="mb-8 text-3xl md:mb-12 md:text-[38px]">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="accordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item border-y border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What colors does Galaxy S25 Ultra come in ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra comes in four stunning colors: Titanium
+                  Black, Titanium Gray, Titanium Violet, and Titanium Yellow.
+                  Each color features a premium titanium frame with a
+                  sophisticated matte finish.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What's different about the design of Galaxy S25 Ultra ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra features a refined design with a titanium
+                  frame that's both lightweight and ultra-durable. The device
+                  has slightly curved edges for improved ergonomics and comfort,
+                  while maintaining the iconic squared-off design. It has the
+                  toughest glass ever used on a Galaxy device and a flatter
+                  display for improved S Pen functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                How is Galaxy S25 Ultra different from Galaxy S24 Ultra ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra brings several improvements over the S24
+                  Ultra, including the Snapdragon 8 Elite processor for enhanced
+                  performance and efficiency, advanced Galaxy AI features,
+                  improved camera capabilities with the new ProVisual Engine,
+                  and refined design with better ergonomics. The S25 Ultra also
+                  offers enhanced battery life and faster charging capabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What Galaxy AI features are available?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra includes a comprehensive suite of Galaxy AI
+                  features such as Circle to Search with Google, Live Translate
+                  for real-time conversation translation, Note Assist for
+                  summarizing and formatting notes, Chat Assist for
+                  communication help, Transcript Assist for recording and
+                  transcribing meetings, and advanced photo editing capabilities
+                  like Generative Edit and Portrait Studio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                How is the camera better than that of Galaxy S24 Ultra ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  The Galaxy S25 Ultra camera features the new ProVisual Engine,
+                  which enhances image quality in all lighting conditions. The
+                  200MP main camera has improved low-light performance, and the
+                  AI-powered Object-Aware Engine ensures accurate subject
+                  recognition and natural skin tones. Video recording has been
+                  enhanced with better stabilization and 4K HDR capabilities,
+                  while the Portrait mode delivers studio-quality results.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                How good is the battery in Galaxy S25 Ultra ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra features a robust 5000mAh battery that
+                  provides all-day usage. With the efficient Snapdragon 8 Elite
+                  processor, you can get up to 31 hours of video playback. The
+                  device supports 45W fast charging that can deliver hours of
+                  power in just minutes, as well as wireless charging and
+                  Wireless PowerShare for charging other devices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What makes Galaxy S25 Ultra durable?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra features a titanium frame that provides
+                  enhanced durability while remaining lightweight. It's
+                  protected by the toughest Gorilla Glass ever used on a Galaxy
+                  device, offering superior scratch and drop protection. The
+                  device is IP68 rated for water and dust resistance, allowing
+                  submersion in up to 1.5 meters of freshwater for up to 30
+                  minutes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Why is Galaxy S25 Ultra good for gaming?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra delivers exceptional gaming performance with
+                  the Snapdragon 8 Elite processor and 12GB of RAM. The vapor
+                  chamber cooling system prevents overheating during extended
+                  gaming sessions. The 6.8-inch Dynamic AMOLED 2X display with
+                  120Hz refresh rate provides smooth visuals, while the enhanced
+                  Ray Tracing capabilities deliver console-quality graphics on
+                  mobile.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 9 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Does Galaxy S25 Ultra come with S Pen?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Yes, Galaxy S25 Ultra comes with the S Pen built into the
+                  device. The S Pen has been improved with lower latency for a
+                  more natural writing experience. It supports all the familiar
+                  S Pen features like Air Commands, Screen Off Memo, Samsung
+                  Notes, and now includes enhanced AI capabilities such as Note
+                  Assist for summarizing and formatting your notes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 10 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Can I transfer my data from iOS?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Yes, you can easily transfer your data from iOS using Samsung
+                  Smart Switch. This tool allows you to transfer contacts,
+                  photos, messages, notes, calendar events, and even some apps
+                  from your iPhone to your new Galaxy S25 Ultra. The process can
+                  be done wirelessly or using a USB cable for faster transfer of
+                  large data amounts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 11 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                How is my data protected on Galaxy S25 Ultra ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Galaxy S25 Ultra features Samsung Knox security platform that
+                  protects your data with multiple layers of defense. Personal
+                  Data Engine processes sensitive information on-device, while
+                  Knox Vault secures biometric data in a physically isolated
+                  environment. The device includes features like Secure Folder
+                  for private files, Auto Blocker to prevent unauthorized
+                  installations, and Privacy Dashboard to monitor app
+                  permissions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- lifeOpens_sec section -->
+    <section class="lifeOpens_sec bg-black py-10 md:py-16 lg:py-24">
+      <div class="container988">
+        <!-- Product Cards Row -->
+        <div
+          class="product_cards bsm:grid-cols-2 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6"
+        >
+          <!-- Card 1: Galaxy S25 Ultra -->
+          <div
+            class="product_card card_1 min-h-[360px] overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://images.samsung.com/bd/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-common-banner-mktpd.jpg?imbypass=true);
+            "
+          >
+            <h3 class="text-2xl font-bold text-white lg:text-3xl">
+              Galaxy S25 Ultra
+            </h3>
+
+            <a
+              href="#"
+              class="mt-4 inline-flex items-center justify-center rounded-[50px] border border-white px-6 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black md:text-base"
+            >
+              Buy now
+            </a>
+          </div>
+
+          <!-- Card 2: Galaxy S25 Ultra for Business -->
+          <div
+            class="product_card relative overflow-hidden rounded-[20px] bg-[#4A4A4A] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://i0.wp.com/innogyan.in/wp-content/uploads/2024/11/wp-17321235848476340449832865924934.jpg?w=1276&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                Galaxy S25 Ultra<br class="hidden sm:block" />for Business
+              </h3>
+
+              <a
+                href="#"
+                class="mt-4 inline-flex items-center justify-center rounded-[50px] border border-white px-6 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black md:text-base"
+              >
+                Buy now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Galaxy S25 | S25+ -->
+          <div
+            class="product_card bsm:col-span-2 relative overflow-hidden rounded-[20px] bg-[#A8C5F3] px-6 pt-8 pb-4 md:col-span-1"
+            style="
+              background-image: url(https://i0.wp.com/innogyan.in/wp-content/uploads/2025/03/wp-17432232495054877163075925542189.jpg?resize=1140%2C570&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                Galaxy S25 | S25+
+              </h3>
+
+              <a
+                href="#"
+                class="mt-4 inline-flex items-center justify-center rounded-[50px] border border-white px-6 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black md:text-base"
+              >
+                Learn more
+              </a>
+            </div>
+
+            <!-- <div class="product_image mt-6 flex justify-center">
+              <img
+                src="https://image-us.samsung.com/us/smartphones/galaxy-s25/images/galaxy-s25-highlights-kv-mb.jpg?imbypass=true"
+                alt="Galaxy S25 and S25+"
+                class="max-h-[300px] w-auto transition duration-300 hover:scale-105"
+              />
+            </div> -->
+          </div>
+        </div>
+        <!-- LifeOpens #BottomCard Section -->
+        <div
+          class="life_opens mt-6 min-h-[330px] rounded-[20px] px-[34px] py-[60px] md:mt-8 lg:mt-10"
+          style="
+            background-image: url(https://images.samsung.com/bd/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-common-banner-why-galaxy.jpg?imbypass=true);
+          "
+        >
+          <h2 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+            Life opens up<br class="hidden sm:block" />with Galaxy
+          </h2>
+          <a
+            href="#"
+            class="mt-4 inline-flex items-center justify-center rounded-[50px] border border-white bg-transparent px-6 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black md:mt-6 md:px-8 md:py-3 md:text-base"
+          >
+            Explore more
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- SoundStudio Section -->
+    <section class="sound_studio bg-black py-10 text-white md:py-16 lg:py-24">
+      <div class="container988">
+        <div class="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
+          <!-- Left Content -->
+          <div class="sound_studio_content w-full md:w-[50%] lg:w-[45%] ">
+            <h2 class="desktop_heading hidden md:block mb-5 font-bold md:text-4xl lg:text-5xl lg:leading-[56px]">
+              A sound studio at<br>your fingertips
+            </h2>
+
+            <p class="mb-6 md:mb-8 text-base leading-[27.9px] text-[#dadada] opacity-90 md:text-lg">
+              Filter out unwanted background noise from your videos and make
+              them share-worthy with Audio Eraser. Galaxy AI fine-tunes your
+              audio by adjusting different types of sound including voices,
+              music, wind and more.<sup>12</sup>
+            </p>
+
+            <div class="left_bottom mt-4">
+              <a href="#" class="gap-4 text-white hover:text-[#2c69e2]">
+                <span class="flex gap-2">
+                  <span class="flex h-8 w-8 items-center justify-center rounded-full border border-[#555] bg-black text-[#9b968d]">
+                    <i class="fas fa-play text-xs"></i>
+                  </span>
+                  <span class="inline-block text-lg font-normal">How to use Audio Eraser</span>
+                </span>
+              </a>
+            </div>
+            <a href="#" class="flex items-center gap-4 text-white hover:text-[#2c69e2]">
+            </a>
+          </div>
+
+          <!-- Right Content (Audio Player Interface) -->
+          <div class="sound_studio_player">
+            <h2 class="mobile_heading mb-5 text-[28px] font-bold leading-[34px] md:hidden  ">
+              A sound studio at<br>your fingertips
+            </h2>
+            <div class="overflow-hidden rounded-xl">
+              <!-- Image with audio waveform -->
+              <img class="max-w-[350px]" src="https://images.samsung.com/bd/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-features-audio-eraser-start.jpg?imbypass=true">
+
+              <!-- Audio Controls -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <!-- Debug window size indicator (optional) -->
+    <div
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      "
+    >
+      <span id="screen-size"></span>
+    </div>
 
     <script>
       $(document).ready(function () {
+        // Get screen size
+        let screenSize = $(window).width();
+
         //looks_sleek_accordion
-       // Initialize first accordion item as active in all screens
-        $(".accordion-button:first").addClass("active");
-        $(".accordion-body:first").slideDown();
+        // and only when screen size is ≥ 768px
+        if (screenSize >= 768) {
+          $(".looks_sleek_section .accordion-button:first").addClass("active");
+          $(".looks_sleek_section .accordion-body:first").slideDown();
+        }
 
         $(".accordion-button").on("click", function () {
           let screenSize = $(window).width();
@@ -767,16 +1213,16 @@
             .closest(".accordion-header")
             .next(".accordion-body");
 
-          // Check if this is inside the personal_data_section
-          const isPersonalDataSection =
-            $(this).closest(".personal_data_section").length > 0;
+          // Check if this is inside the personal_data_section or faq section
+          const isSection =
+            $(this).closest(".faq_sec,.personal_data_section").length > 0;
 
           // Close other accordion items
           $(".accordion-button").not(this).removeClass("active");
           $(".accordion-body").not(accordionBody).stop().slideUp();
 
           // Toggle accordion behavior based on section and screen size
-          if (isPersonalDataSection || screenSize < 768) {
+          if (isSection || screenSize < 768) {
             $(this).toggleClass("active");
             accordionBody.stop().slideToggle();
           } else {
@@ -785,13 +1231,13 @@
           }
         });
 
-           // Optional debug script to show screen width
-      function updateScreenSize() {
-        document.getElementById("screen-size").textContent =
-          window.innerWidth + "px";
-      }
-      window.addEventListener("resize", updateScreenSize);
-      updateScreenSize();
+        // Optional debug script to show screen width
+        function updateScreenSize() {
+          document.getElementById("screen-size").textContent =
+            window.innerWidth + "px";
+        }
+        window.addEventListener("resize", updateScreenSize);
+        updateScreenSize();
       });
     </script>
 
