@@ -26,11 +26,8 @@
     <script src="assets/js/main.js"></script>
   </head>
 
-  <style></style>
 
   <body>
-    <!-- <div class="mt-[500px]"></div> -->
-
     <!-- hero_area -->
     <section
       class="hero_area overflow-hidden pt-[350px] pb-[80px] text-white md:pt-[110px] md:pb-[80px] lg:min-h-[100vh] lg:pt-[370px] lg:pb-[100px] xl:pb-[70px]"
@@ -1567,72 +1564,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-
-    
-
-    <!-- Debug window size indicator (optional) -->
-    <div
-      style="
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-      "
-    >
-      <span id="screen-size"></span>
-    </div>
-
-    <script>
-      $(document).ready(function () {
-        // Get screen size
-        let screenSize = $(window).width();
-
-        //looks_sleek_accordion
-        // and only when screen size is ≥ 768px
-        if (screenSize >= 768) {
-          $(".looks_sleek_section .accordion-button:first").addClass("active");
-          $(".looks_sleek_section .accordion-body:first").slideDown();
-        }
-
-        $(".accordion-button").on("click", function () {
-          let screenSize = $(window).width();
-          const accordionBody = $(this)
-            .closest(".accordion-header")
-            .next(".accordion-body");
-
-          // Check if this is inside the personal_data_section or faq section
-          const isSection =
-            $(this).closest(".faq_sec,.personal_data_section").length > 0;
-
-          // Close other accordion items
-          $(".accordion-button").not(this).removeClass("active");
-          $(".accordion-body").not(accordionBody).stop().slideUp();
-
-          // Toggle accordion behavior based on section and screen size
-          if (isSection || screenSize < 768) {
-            $(this).toggleClass("active");
-            accordionBody.stop().slideToggle();
-          } else {
-            $(this).addClass("active");
-            accordionBody.stop().slideDown();
-          }
-        });
-
-        // Optional debug script to show screen width
-        function updateScreenSize() {
-          document.getElementById("screen-size").textContent =
-            window.innerWidth + "px";
-        }
-        window.addEventListener("resize", updateScreenSize);
-        updateScreenSize();
-      });
-    </script>
-
-    <div class="mb-[500px]">,</div>
+      </section>  
   </body>
 </html>
