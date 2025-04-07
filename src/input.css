@@ -3,6 +3,8 @@
   --breakpoint-xsm: 425px;
   --breakpoint-bsm: 576px;
   --breakpoint-730: 730px;
+  --breakpoint-919: 919px;
+  --breakpoint-920: 920px;
 }
 
 /*======================
@@ -48,7 +50,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color:unset;
+  color: unset;
 }
 a:focus,
 input:focus,
@@ -82,8 +84,7 @@ textarea {
   /* background: #fafafa; */
   resize: none;
 }
-img
- {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -187,7 +188,7 @@ Common Css Ends
   position: relative;
   padding: 20px;
   z-index: 1;
-  min-height:330px;
+  min-height: 330px;
 }
 
 .product_card::before {
@@ -201,9 +202,56 @@ Common Css Ends
   z-index: -1;
   opacity: 0.3;
 }
+/* sound_studio */
+.sound_studio img#desktop-phone-display {
+  max-width: 200px;
+  min-height: 300px;
+}
+.smart_tech .s25Img {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+}
+/* #smart_tech section */
+.smart_tech {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
 
+.smart_tech_slider .swiper-pagination-bullet {
+  background: #555;
+  opacity: 0.5;
+}
 
+.smart_tech_slider .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
 
+.color_option {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color_option:hover {
+  transform: scale(1.05);
+}
+
+/* .color_option.active {
+  border-color: red !important;
+} */
+
+.phone_display {
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+@media (max-width: 919px) {
+  .smart_tech_slider {
+    padding-bottom: 40px;
+  }
+}
 
 /* Responsive */
 
@@ -211,13 +259,12 @@ Common Css Ends
   .mobile-image {
     display: none;
   }
- 
 }
 @media (min-width: 1024px) {
   /* Desktop-specific styles */
   .product_card {
-    min-height:450px;
-}
+    min-height: 450px;
+  }
 }
 
 /* Max-width */
@@ -237,6 +284,12 @@ Common Css Ends
   }
 }
 /* max-width: 1023px */
+@media (max-width: 919px) {
+  .smart_tech_slider {
+    padding-bottom: 40px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .feature_swiper {
@@ -248,7 +301,6 @@ Common Css Ends
   /* .sound_studio .container988 {
     max-width: 320px;
 } */
-
 }
 
 @media screen and (max-width: 767px) {
@@ -267,4 +319,9 @@ Common Css Ends
   .desktop-image {
     display: none;
   }
+  .smart_tech .s25Img {
+    width: 250px;
+    height: 250px;
+    
+}
 }
